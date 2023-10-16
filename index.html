@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Search</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./images/favicongit.png" type="image/x-icon">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!--title-->
+            <div class="flex space-between items-center">
+                <h3 class="devfinder">
+                    devfinder
+                </h3>
+                <button id="btnSwitch" class="switch active"> 
+                    <img src="./images/sol.png"  alt="" />
+                    <img src="./images/lunita.png"  alt="" />
+            </div>
+            <div>
+                <!--search-->
+                <div class="search flex space-between items-center">
+                    <img src="./images/search.png" widht="20px" height="20px" alt="" />
+                    <input id="username" type="text" placeholder="Search GitHub username..." autocomplete="off" />
+                    <button id="btn-search" class="btns" style="vertical-align:middle"><span>Search</span>
+                </div>
+                <div>
+                    <!--result-->
+                    <div class="result flex margin-20">
+                        <div>
+                            <img id="avatar" class="avatar flex" src="./images/github-octocat.jpg" width="100px" height="100px" />
+                        </div>
+                        <div class="profile">
+                            <div class="flex space-between">
+                                <div>
+                                    <h3 id="nickname">The Octocat</h3>
+                                    <p id="githubname" class="username">@octocat</p>
+                                </div>
+                                <div>
+                                    <p id="date" class="date">Joined 18 setember 2023</p>
+                                </div>
+                            </div>
+                            <p id="biography" class="bio margin-20">
+                                This profile has no bio
+                            </p>
+                            <div class="repos flex space-around margin-20">
+                                <div>
+                                    <h3 class="weak">Repos</h3>
+                                    <p id="repo" class="strong">8</p>
+                                </div>
+                                <div>
+                                    <h3 class="weak">Followers</h3>
+                                    <p id="followers" class="strong">3938</p>
+                                </div>
+                                <div>
+                                    <h3 class="weak">Following</h3>
+                                    <p id="following" class="strong">9</p>
+                                </div>
+                            </div>
+                            <div class="items flex space-around margin-20">
+                                <div>
+                                    <div class="flex items-center gap-10">
+                                        <img src="./images/location.png" width="20px"/>
+                                        <h3 id="place">San Francisco</h3>
+                                    </div>
+                                    <div class="flex items-center gap-10 margin-15">
+                                        <img src="./images/link.png" width="20px"/>
+                                        <h3 id="repolink">https://github.blog</h3>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-10">
+                                        <img src="./images/twitter.png" width="20px"/>
+                                        <h3 id="twitter">Not Available</h3>
+                                    </div>
+                                    <div class="flex items-center gap-10 margin-15">
+                                        <img src="./images/github.png" width="20px"/>
+                                        <h3 id="githublink">@github</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+</body>
+
+</html>

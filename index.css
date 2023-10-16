@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace,sans-serif;
+    background-color: rgba(3, 0, 39, 0.945);
+    transition: .3s ease all;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+}
+
+.flex {
+    display: flex
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.margin-15 {
+    margin-top: 15px;
+}
+
+.margin-20 {
+    margin-top: 20px;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.container {
+    width: 700px;
+}
+
+.search {
+    padding: 10px;
+    padding-left: 15px;
+    gap: 15px;
+    margin-top: 20px;
+    background-color: rgb(59, 69, 122);
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+    flex-grow: 1;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.search .btns {
+    background-color: rgb(23, 133, 177);
+    color: #fff;
+    padding: 13px;
+    padding-right: 22px;
+    padding-left: 22px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: monospace,sans-serif;
+    font-size: 15px;
+}
+
+.search .btns span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .search .btns span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  
+  .search .btns:hover {
+    background-color: rgb(66, 201, 255);
+  }
+
+  .search .btns:hover span {
+    padding-right: 20px;
+  }
+  
+  .search .btns:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .search .btns:active {
+    background-color: rgb(23, 133, 177);
+    box-shadow: 0 5px transparent;
+    transform: translateY(2px);
+  }
+
+.result {
+    background-color: rgb(59, 69, 122);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    gap: 30px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.profile {
+    flex-grow: 1;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.bio {
+    color: rgb(255, 255, 66);
+}
+
+.repos {
+    background-color: rgba(3, 0, 39, 0.692);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.items {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.weak {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.strong{
+    font-size: 25px;
+}
+
+.username {
+    color: #03dbac;
+    font-weight: 800;
+}
+
+.switch {
+    background: orange;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    gap: 10px;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: unset;
+    right: 0;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2)
+}
+
+.switch:active {
+    background: rgb(59, 69, 122);
+    color: black;
+}
+
+.switch.active::after {
+    right: unset;
+    left: 0;
+    transition: .3s ease all;
+}
+
+
+.switch img {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+/* LIGHT MODE */
+
+.lightmode {
+    background: #f3f3f3
+}
+
+.lightmode .switch {
+    background-color: rgba(3, 0, 39, 0.945);
+}
+
+.lightmode .devfinder {
+    color: rgb(59, 69, 122);
+    font-weight: bold;
+}
+
+.lightmode .search {
+    background-color: #fff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.lightmode input {
+    color: rgb(59, 69, 122);
+}
+
+.lightmode .search input::placeholder{
+    color: rgb(59, 69, 122);
+}
+
+.lightmode .result {
+    background-color: #fff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.lightmode #nickname {
+    color: rgb(59, 69, 122);
+    font-weight: bold;
+}
+
+.lightmode #date {
+    color: rgb(59, 69, 122);
+}
+
+.lightmode #biography {
+    color: rgb(252, 115, 4);
+    font-weight: bold;
+}
+
+.lightmode .repos {
+    background-color: #f3f3f3;
+    color: rgb(59, 69, 122);
+}
+
+.lightmode .items {
+    color: rgb(59, 69, 122);
+}
